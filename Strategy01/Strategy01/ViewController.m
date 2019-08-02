@@ -34,6 +34,8 @@
     
     mDuck.flyBehavior = [[FlyWithNoWay alloc] init];
     [mDuck performFly];
+    
+    [self addObserver:mDuck forKeyPath:@"1" options:0 context:0];
 }
 
 
